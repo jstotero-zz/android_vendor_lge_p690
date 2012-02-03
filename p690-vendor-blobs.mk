@@ -54,10 +54,13 @@ PRODUCT_COPY_FILES += \
 ## Audio
 
 PRODUCT_COPY_FILES += \
-    vendor/lge/p690/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so
+    vendor/lge/p690/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
 
-## HAL
+## HAL & 2D
 PRODUCT_COPY_FILES += \
+    vendor/lge/p690/proprietary/lib/hw/gralloc.msm7k.so:system/lib/hw/gralloc.msm7k.so \
+    vendor/lge/p690/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
+    vendor/lge/p690/proprietary/lib/hw/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so \
     vendor/lge/p690/proprietary/lib/hw/lights.msm7k.so:system/lib/hw/lights.msm7k.so \
     vendor/lge/p690/proprietary/lib/hw/sensors.msm7k.so:system/lib/hw/sensors.msm7k.so
 
@@ -114,4 +117,8 @@ PRODUCT_COPY_FILES += \
 ## WiFi
 PRODUCT_COPY_FILES += \
     vendor/lge/p690/proprietary/etc/wl/rtecdc.bin:system/etc/wl/rtecdc.bin \
-    vendor/lge/p690/proprietary/etc/wl/rtecdc-apsta.bin:system/etc/wl/rtecdc-apsta.bin
+    vendor/lge/p690/proprietary/etc/wl/rtecdc-apsta.bin:system/etc/wl/rtecdc-apsta.bin \
+    vendor/lge/p690/proprietary/etc/wl/rtecdc-mfgtest.bin:system/etc/wl/rtecdc-mfgtest.bin
+
+# CND
+PRODUCT_COPY_FILES +=     vendor/lge/p690/proprietary/bin/cnd:system/bin/cnd 
