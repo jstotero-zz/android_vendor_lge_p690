@@ -112,7 +112,8 @@ PRODUCT_COPY_FILES += \
 
 ## BT
 PRODUCT_COPY_FILES += \
-    vendor/lge/p690/proprietary/bin/BCM4330B1_002.001.003.0337.0338.hcd:system/bin/BCM4330B1_002.001.003.0337.0338.hcd
+    vendor/lge/p690/proprietary/bin/BCM4330B1_002.001.003.0337.0338.hcd:system/bin/BCM4330B1_002.001.003.0337.0338.hcd \
+    vendor/lge/p690/proprietary/bin/btld:system/bin/btld
 
 ## WiFi
 PRODUCT_COPY_FILES += \

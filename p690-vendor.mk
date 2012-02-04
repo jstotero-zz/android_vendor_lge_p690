@@ -23,6 +23,8 @@ PRODUCT_PACKAGES := \
     librs_jni \
     FileManager \
     CMParts \
+    CMScreenshot \
+    CMStats \
     AndroidTerm 
 
 # Publish that we support the live wallpaper feature.
